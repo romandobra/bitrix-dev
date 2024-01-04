@@ -16,5 +16,8 @@ RUN docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/i
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 ADD php.ini /usr/local/etc/php/conf.d/40-custom.ini
+
+RUN usermod -u 1000 www-data
+
 WORKDIR /var/www
 CMD ["php-fpm"]
