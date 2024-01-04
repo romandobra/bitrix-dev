@@ -18,10 +18,11 @@ services:
         volumes:
             - ./www:/var/www
     mysql:
-        image: mysql:5.7
-        ports:
-            - "3306:3306"
+        build: ./images/mysql
+#        image: mysql:5.7
+#        ports:
+#            - "3306:3306"
 #        volumes:
 #            - ./mysql:/var/lib/mysql
-        environment:
-            MYSQL_ROOT_PASSWORD: secret
+#        environment:
+#            MYSQL_ROOT_PASSWORD: secret
