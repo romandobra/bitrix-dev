@@ -21,9 +21,4 @@ RUN usermod -u 1000 www-data
 
 WORKDIR /var/www
 
-RUN wget -O /var/www/bitrixsetup.php https://www.1c-bitrix.ru/download/scripts/bitrixsetup.php \
-        && chown www-data:www-data /var/www/bitrixsetup.php
-RUN wget -O /var/www/restore.php http://www.1c-bitrix.ru/download/scripts/restore.php \
-        && chown www-data:www-data /var/www/restore.php
-
 CMD ["php-fpm"]
