@@ -20,4 +20,8 @@ ADD php.ini /usr/local/etc/php/conf.d/40-custom.ini
 RUN usermod -u 1000 www-data
 
 WORKDIR /var/www
+
+#https://www.1c-bitrix.ru/download/scripts/bitrixsetup.php
+#http://www.1c-bitrix.ru/download/scripts/restore.php
+
 CMD ["php-fpm"]
