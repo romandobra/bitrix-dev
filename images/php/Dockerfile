@@ -3,8 +3,8 @@ ARG PHP_IMAGE="7.4-fpm"
 ARG PHP_EXT_CONF_FIX="-dir=/usr/include/"
 
 # PHP82
-#ARG PHP_IMAGE="8.2-fpm-bullseye"
-#ARG PHP_EXT_CONF_FIX=
+ARG PHP_IMAGE="8.2-fpm-bullseye"
+ARG PHP_EXT_CONF_FIX=
 
 # comment out the PHP82 ARGs to install PHP74
 
