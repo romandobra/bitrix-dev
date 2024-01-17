@@ -16,10 +16,10 @@ services:
             context: ./images/php
             args:
 # comment out either PHP82 or PHP74
-                PHP_IMAGE: 7.4-fpm                     # PHP74
-                PHP_EXT_CONF_FIX: -dir=/usr/include/   # PHP74
-#                PHP_IMAGE: "8.2-fpm-bullseye"          # PHP82
-#                PHP_EXT_CONF_FIX: ""                   # PHP82
+#                PHP_IMAGE: 7.4-fpm                     # PHP74
+#                PHP_EXT_CONF_FIX: -dir=/usr/include/   # PHP74
+                PHP_IMAGE: "8.2-fpm-bullseye"          # PHP82
+                PHP_EXT_CONF_FIX: ""                   # PHP82
         links:
             - mysql
         volumes:
