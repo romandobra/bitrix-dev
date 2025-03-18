@@ -1,4 +1,4 @@
-FROM mysql:5.7
+FROM mysql:lts
 
 ENV MYSQL_DATABASE=sitemanager
 ENV MYSQL_USER=bitrix
